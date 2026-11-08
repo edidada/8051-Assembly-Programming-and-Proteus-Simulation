@@ -1,0 +1,54 @@
+# Sources verified to assemble with as31 2.3.1 + edidada-ci/asm51_shim.py
+# when this branch was prepared (37/48 of the assembler files found).
+# CI fails if one of these stops building; everything else is reported
+# in the job summary with a reason tag instead of blocking the run.
+8051 7-Segment/AT89C51_7_Segment_Interfacing_Timer_Delay_No_Interrupt.asm
+8051 7-Segment/AT89C51_7_Segment_LookUp_Table.asm
+8051 7-Segment/AT89C51_7_Segment_Simple.asm
+8051 Analog Inputs/8051 LM35 AD0804/ADC0804_8051.asm
+8051 Basic Calculator/8051 Basic Calculator.asm
+8051 Coffe Machine/Coffee Machine.asm
+8051 DC Motor/8051 L293D DC Motor/AT89C51 DC Motor Speed Controller_4.asm
+8051 DC Motor/8051 L298 DC Motor/motor_LCD.asm
+8051 DC Motor/8051 L298 DC Motor/motor_changedir.asm
+8051 DOT Matrix LED/LEDMATRIX_8051.asm
+8051 Keypad/8051 SSD Keypad/AT89C51_SSD_KeyPad_2.asm
+8051 LCD/AT89C51_4_BIT_LCD_ASSEMBLY_PROTEUS/AT89C51_4_BIT_LCD_Rev1.1.asm
+8051 LCD/AT89C51_8_BIT_LCD.asm
+8051 LCD/AT89C51_8_BIT_LCD_LookUp_Table.asm
+8051 LED/codes/LED_Chaser_8051.asm
+8051 LED/codes/led_blink_8051.asm
+8051 LM35 AD0804 LCD/LM35_1_1.asm
+8051 Push Button 7 Segment/AT89C51_7_SEGMENT_UP_DOWN_COUNTER.asm
+8051 RTC DS1307/8051 RTC DS1307 LCD.asm
+8051 RTC DS1307/8051 RTC.asm
+8051 SSD Up Dn Counter/AT89C51_7_SEGMENT_UP_DOWN_COUNTER.asm
+8051 Serial Communication/8051_UART_RX.asm
+8051 Serial Communication/8051_UART_TX.asm
+8051 Stepper Motors/8051 ULN2003 Stepper Motor/STEPPEr.asm
+8051 Stepper Motors/STEPPER_8051_2.asm
+8051 Stepper Motors/STEPPER_8051_3.asm
+8051 Stepper Motors/STEPPER_8051_4.asm
+8051 Stepper Motors/STEPPER_8051_5.asm
+8051 Stepper Motors/STEPPER_8051_90_DEG.asm
+8051 Stepper Motors/STEPPER_8051_FULL_DRIVE.asm
+8051 Stepper Motors/STEPPER_8051_HALF_DRIVE.asm
+8051 Stepper Motors/STEPPER_8051_HALF_DRIVE_Vr_1_1.asm
+8051 Stepper Motors/STEPPER_8051_WAVE_DRIVE.asm
+8051 Traffic Lights/8051 Traffic Lights1/8051 Traffic Lights1.asm
+8051_7_Segment_Display(SSD)/Assembly_Hex_Codes/AT89C51_7_Segment_Simple.asm
+8051_7_Segment_Display(SSD)/Examples/AT89C51_7_Segment_Interfacing_Timer_Delay_No_Interrupt.asm
+8051_7_Segment_Display(SSD)/Examples/AT89C51_7_Segment_LookUp_Table.asm
+
+# ---- not gated, with the measured reason ----
+# 8051 Analog Inputs/8051 Green House/8051GreenHouse.asm   [SYMBOL_CLASH] Light:
+# 8051 DC Motor/8051 DC Motor Basic/MotorControl.asm   [STRING_FORM] KCODE0: .BYTE '1", "2','3','0'
+# 8051 Frequency Counter/AT89C51_LCD_FRE_COUNTER_Vr_1.0.asm   [UNSUPPORTED_FORM] .EQU VAR1, R2
+# 8051 Frequency Counter/AT89C51_LCD_FRE_COUNTER_Vr_1.1.asm   [UNSUPPORTED_FORM] .EQU VAR1, R2
+# 8051 GSM Interfacing/8051_GSM_INTERFACE_1.0.asm   [SYNTAX] MOV A,#"A"
+# 8051 GSM Interfacing/Extra Examples/8051-Sim900D-SMS-TRY.ASM   [SYNTAX] MSG4: .BYTE "AT+CMGS=",""8149111111"",0DH
+# 8051 GSM Interfacing/Extra Examples/8051-Sim900D-comm-test.ASM   [SYNTAX] TABLE3: .BYTE "AT+CMGS="03301234567"",0Dh
+# 8051 GSM Interfacing/Extra Examples/8051-Sim900D-number-init-msg-sending.ASM   [SYNTAX] TABLE3: .BYTE "AT+CMGS=""
+# 8051 Keypad/8051 Musical Keypad/musical_keyboard_assembly.asm   [REL_RANGE] nine: CJNE A,#0DDH,0xA
+# 8051 Traffic Lights/8051 Traffic Lights2/8051 Traffic Lights2.asm   [UNDEFINED:WDTCN.] MOV WDTCN,#11011110B ;0DEH
+# 8051_LUDO_GAME/8051_Ludo_Game_1.0.asm   [FAIL] SETB FLAG2
